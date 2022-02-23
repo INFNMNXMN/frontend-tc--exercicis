@@ -1,0 +1,42 @@
+.Calculadora {
+  margin: 0 auto;
+  max-width: width 300px;
+}
+.Display {
+  text-align: right;
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+  font-family: monospace;
+}
+.Butons,
+.Numeros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: orange;
+}
+:is(.Butons, .Numeros) button {
+  background: lightgoldenrodyellow;
+  flex: 0 0 33%;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.Butons {
+  background-color: aquamarine;
+}
+.Butons button {
+  background-color: aliceblue;
+}
+.Numeros button:hover {
+  background-color: white;
+}
+.Numeros button:active {
+  background-color: white;
+}
+.Numeros button active {
+  background-color: gray;
+}
