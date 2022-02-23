@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/frontend-tc--exercicis/static/css/main.d9c8924b.css",
+    "main.js": "/frontend-tc--exercicis/static/js/main.a0548f43.js",
+    "static/js/787.a06eb7f3.chunk.js": "/frontend-tc--exercicis/static/js/787.a06eb7f3.chunk.js",
+    "index.html": "/frontend-tc--exercicis/index.html",
+    "main.d9c8924b.css.map": "/frontend-tc--exercicis/static/css/main.d9c8924b.css.map",
+    "main.a0548f43.js.map": "/frontend-tc--exercicis/static/js/main.a0548f43.js.map",
+    "787.a06eb7f3.chunk.js.map": "/frontend-tc--exercicis/static/js/787.a06eb7f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9c8924b.css",
+    "static/js/main.a0548f43.js"
+  ]
+}
