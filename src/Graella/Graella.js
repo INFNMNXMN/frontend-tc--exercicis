@@ -60,7 +60,7 @@ import { useState } from "react";
 }*/
 export default function Graella() {
   const fotos = [
-    "foto1.jpg",
+    "/public/foto1.jpg",
     "foto2.jpg",
     "foto3.jpg",
     "foto4.jpg",
@@ -82,7 +82,7 @@ export default function Graella() {
       {fotos.map((foto) => (
         <img
           key={foto}
-          src={foto}
+          src={process.env.PUBLIC_URL + "foto"}
           alt="menu"
           onClick={() => setGran(foto)}
         ></img>
