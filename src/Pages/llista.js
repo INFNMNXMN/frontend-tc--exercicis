@@ -1,8 +1,8 @@
-import Graella from "../Graella/Graella";
-import Comptador from "../Comptador/Comptador";
-import ToggleButton from "../ToggleButton";
-import NewcounterRedux from "../newcounterRedux/App";
-import Calculadora from "../Calculadora/Calculadora";
+import Graella from "./Graella/Graella";
+import Comptador from "./Comptador/Comptador";
+import ToggleButton from "./TuggleButton/ToggleButton";
+import NewcounterRedux from "./newcounterRedux/App";
+import Calculadora from "./Calculadora/Calculadora";
 
 const llista = [
   { path: "graella", titol: "Graella de fotos", element: <Graella /> },
