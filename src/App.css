@@ -30,7 +30,8 @@ footer {
 }
 main,
 nav,
-aside¨ {
+aside {
+  border: solid black 1px;
   padding: 1rem;
 }
 footer {
