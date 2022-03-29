@@ -27,6 +27,8 @@ function Calculadora() {
   const calcular = () => {
     if (operacio === "+") setDisplay(antic + display);
     if (operacio === "-") setDisplay(antic - display);
+    if (operacio === "*") setDisplay(antic * display);
+    if (operacio === "/") setDisplay(antic / display);
   };
 
   return (
@@ -42,6 +44,8 @@ function Calculadora() {
       <br />
       <button onClick={() => entraOperacio("+")}>+</button>
       <button onClick={() => entraOperacio("-")}>-</button>
+      <button onClick={() => entraOperacio("*")}>*</button>
+      <button onClick={() => entraOperacio("/")}>/</button>
       <br />
       <button onClick={calcular}>=</button>
     </div>
