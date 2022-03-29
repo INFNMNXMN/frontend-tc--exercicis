@@ -68,7 +68,7 @@ export default function Graella() {
     "foto6.jpg",
     "foto7.jpg",
     "foto8.jpg",
-  ].map((foto) => process.env.PUBLIC_URL + foto);
+  ].map((foto) => process.env.PUBLIC_URL + "/" + foto);
 
   const [gran, setGran] = useState(false);
 
