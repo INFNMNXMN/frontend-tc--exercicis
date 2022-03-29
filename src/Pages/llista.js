@@ -1,7 +1,7 @@
 import Graella from "./Graella/Graella";
 import Comptador from "./Comptador/Comptador";
 import ToggleButton from "./TuggleButton/ToggleButton";
-import NewcounterRedux from "./NewcounterRedux/App";
+import { CounterRedux } from "./NewcounterRedux/CounterRedux";
 import Calculadora from "./Calculadora/Calculadora";
 
 const llista = [
@@ -9,9 +9,9 @@ const llista = [
   { path: "comptador", titol: "Comptador", element: <Comptador /> },
   { path: "toggle-button", titol: "Toggle button", element: <ToggleButton /> },
   {
-    path: "NewcounterRedux",
-    titol: "Comptador Redux",
-    element: <NewcounterRedux />,
+    path: "counter-redux",
+    titol: "Comptador redux",
+    element: <CounterRedux />,
   },
   { path: "calculadora", titol: "Calculadora", element: <Calculadora /> },
 ];
