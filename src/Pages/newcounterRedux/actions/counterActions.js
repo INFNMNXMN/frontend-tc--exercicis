@@ -15,6 +15,5 @@ export const decreaseCounter = (amount) => {
 export const resetCounter = (amount) => {
   return {
     type: "RESET",
-
   };
 };

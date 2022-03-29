@@ -1,8 +1,8 @@
 import "./CounterRedux.css";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  incrementaCounter,
-  decrementaCounter,
+  increaseCounter,
+  decreaseCounter,
   resetCounter,
 } from "./actions/counterActions";
 
@@ -20,7 +20,7 @@ export function CounterRedux() {
             className="inc1"
             onClick={() =>
               count < 10
-                ? dispatchCounter(incrementaCounter(1))
+                ? dispatchCounter(increaseCounter(1))
                 : alert("El número no puede superar el 10")
             }
           >
@@ -30,7 +30,7 @@ export function CounterRedux() {
             className="dec1"
             onClick={() =>
               count > 0
-                ? dispatchCounter(decrementaCounter(1))
+                ? dispatchCounter(decreaseCounter(1))
                 : alert("El número no puede bajar de 0")
             }
           >
@@ -40,7 +40,7 @@ export function CounterRedux() {
             className="inc5"
             onClick={() =>
               count < 6
-                ? dispatchCounter(incrementaCounter(5))
+                ? dispatchCounter(increaseCounter(5))
                 : alert("El número no puede superar el 10")
             }
           >
