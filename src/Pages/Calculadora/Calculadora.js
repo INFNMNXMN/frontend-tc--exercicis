@@ -13,10 +13,15 @@ function Calculadora() {
   const [novaEntrada, setNovaEntrada] = useState(false);
   const [display, setDisplay] = useState(0);
   const entraNumero = (numero) => {
+    console.log("num", numero);
     setAntic(display);
-    if (novaEntrada) setDisplay(numero);
-    else setDisplay((display = 10 + numero));
-    setNovaEntrada(false);
+    if (novaEntrada) {
+      console.log("in", novaEntrada);
+      setDisplay(numero);
+    } else {
+      setDisplay(numero);
+      setNovaEntrada(false);
+    }
   };
   const entraOperacio = (operacio) => {
     setNovaEntrada(true);
