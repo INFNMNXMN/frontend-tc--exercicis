@@ -12,7 +12,7 @@ export const decreaseCounter = (amount) => {
   };
 };
 
-export const resetCounter = (amount) => {
+export const reset = (amount) => {
   return {
     type: "RESET",
   };
