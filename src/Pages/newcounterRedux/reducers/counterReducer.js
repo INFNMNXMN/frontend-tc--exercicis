@@ -1,59 +1,26 @@
-import "./CounterRedux.css";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  increaseCounter,
-  decreaseCounter,
-  resetCounter,
-} from "./actions/counterActions";
+const initalState = {
+  count: 0,
+};
 
-export function CounterRedux() {
-  const count = useSelector((store) => store.counterReducer.count);
+export const counterReducer = (state = initalState, action) => {
+  switch (action.type) {
+    case "INCREASE_COUNTER":
+      return {
+        ...state,
+        count: state.count + action.payload,
+      };
+    case "DECREASE_COUNTER":
+      return {
+        ...state,
+        count: state.count - action.payload,
+      };
 
-  const dispatchCounter = useDispatch();
-
-  return (
-    <div className="caja">
-      <div className="Calculadora">
-        <div className="Display">{count}</div>
-        <div className="Botones">
-          <button
-            className="inc1"
-            onClick={() =>
-              count < 10
-                ? dispatchCounter(increaseCounter(1))
-                : alert("El número no puede superar el 10")
-            }
-          >
-            Inc. +1
-          </button>
-          <button
-            className="dec1"
-            onClick={() =>
-              count > 0
-                ? dispatchCounter(decreaseCounter(1))
-                : alert("El número no puede bajar de 0")
-            }
-          >
-            Dec -1
-          </button>
-          <button
-            className="inc5"
-            onClick={() =>
-              count < 6
-                ? dispatchCounter(increaseCounter(5))
-                : alert("El número no puede superar el 10")
-            }
-          >
-            Inc +5
-          </button>
-          <button
-            className="clear"
-            onClick={() => dispatchCounter(resetCounter())}
-          >
-            Resetear Contador
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
+    case "RESET":
+      return {
+        ...state,
+        count: 0,
+      };
+    default:
+      return state;
+  }
+};

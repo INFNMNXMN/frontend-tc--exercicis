@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   increaseCounter,
   decreaseCounter,
-  resetCounter,
+  reset,
 } from "./actions/counterActions";
 
 export function CounterRedux() {
@@ -46,10 +46,7 @@ export function CounterRedux() {
           >
             Inc +5
           </button>
-          <button
-            className="clear"
-            onClick={() => dispatchCounter(resetCounter())}
-          >
+          <button className="clear" onClick={() => dispatchCounter(reset())}>
             Resetear Contador
           </button>
         </div>
