@@ -47,12 +47,14 @@ function Calculadora() {
         ))}
       </div>
       <br />
-      <button onClick={() => entraOperacio("+")}>+</button>
-      <button onClick={() => entraOperacio("-")}>-</button>
-      <button onClick={() => entraOperacio("*")}>*</button>
-      <button onClick={() => entraOperacio("/")}>/</button>
-      <br />
-      <button onClick={calcular}>=</button>
+      <div className="Numeros">
+        <button onClick={() => entraOperacio("+")}>+</button>
+        <button onClick={() => entraOperacio("-")}>-</button>
+        <button onClick={() => entraOperacio("*")}>*</button>
+        <button onClick={() => entraOperacio("/")}>/</button>
+        <br />
+        <button onClick={calcular}>=</button>
+      </div>
     </div>
   );
 }
