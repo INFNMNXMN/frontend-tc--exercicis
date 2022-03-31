@@ -13,7 +13,6 @@ function Calculadora() {
   const [novaEntrada, setNovaEntrada] = useState(false);
   const [display, setDisplay] = useState(0);
   const entraNumero = (numero) => {
-    setAntic(display);
     if (novaEntrada) {
       setDisplay(numero);
     } else {
@@ -28,6 +27,7 @@ function Calculadora() {
     setOperacio(operacio);
   };
   const calcular = () => {
+    console.log("antic:", antic, "display:", display);
     if (operacio === "+") setDisplay(antic + display);
     if (operacio === "-") setDisplay(antic - display);
     if (operacio === "*") setDisplay(antic * display);
