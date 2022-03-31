@@ -1,6 +1,15 @@
 .Calculadora {
-  margin: 0 auto;
-  max-width: width 300px;
+  width: 480px;
+  height: auto;
+  padding: 10px 0;
+  margin: auto;
+  background: #232323;
+  border: #000 1px solid;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  overflow: hidden;
+  text-align: center;
 }
 .Display {
   text-align: right;
@@ -16,7 +25,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 :is(.Butons, .Numeros) button {
   background: lightgoldenrodyellow;
