@@ -27,7 +27,8 @@ export default function Graella() {
         <img
           key={foto}
           src={foto}
-          alt="menu"
+          alt="menu"  
+          height="100"
           onClick={() => setGran(foto)}
         ></img>
       ))}

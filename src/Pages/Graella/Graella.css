@@ -1,36 +1,41 @@
-* {
-  padding: 0;
-  text-align: center;
+.Graella {
+  border: 5px solid rgba(117, 117, 117, 0.747);
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 790px;
+  height: auto;
+  background-color: rgba(189, 189, 189, 0.384);
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: flex-start;
 }
-#cabecera {
-  font: bold 1.3em verdana;
-  background-color: #feffe4;
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  width: 33%;
+  max-height: 100px;
+  border: 1px solid black;
+  margin: 5px;
 }
-h1 {
-  text-align: center;
-  padding: 0.5em;
-}
-#menu {
-  float: left;
-  width: 25%;
-  background-color: #e3f2ff;
-}
-#menu img {
-  width: 35%;
-  margin: 5%;
+.gran {
+  width: 700px;
+  height: 700px;
   cursor: pointer;
 }
-#principal {
-  float: left;
-  width: 75%;
-}
-#visor {
-  width: 60%;
-  margin: 10%;
-}
-#visor img {
-  width: 100%;
-}
-#graella img {
+.ContainerGaleria .Imatge-graella {
   width: 10px;
+  height: 12px;
+}
+.Imatge-graella {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
 }
